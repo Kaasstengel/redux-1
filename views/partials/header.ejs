@@ -1,0 +1,28 @@
+<!-- views/partials/header.ejs -->
+<nav class="navbar navbar-expand-lg navbar-dark translucent">
+	<a class="navbar-brand" href="/">
+		<img src="/images/photo.jpg.png" height="30" class="d-inline-block align-top" alt="Koornbeurs logo"/>
+		Dispuut Redux
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" id="p" href="/">Home <span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="pleden" href="/leden">Leden</a>
+			</li>
+		</ul>
+		<a class="navbar-text" href="#">test</a>
+	</div>
+</nav>
+
+<script>
+	var page = location.pathname.substring(1);
+	console.log(page)
+	$("#p" + page).addClass("active");
+	console.log("Set \"" + page + "\" page to active in navbar.");
+</script>

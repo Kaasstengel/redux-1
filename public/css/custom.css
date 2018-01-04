@@ -1,0 +1,38 @@
+body {
+	background-image: url('/images/bg.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-font-feature-settings: 'tnum';
+    -moz-font-feature-settings: 'tnum';
+    -ms-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+}
+
+.translucent {
+	background-color: rgba(52,58,64,0.7);
+}
+
+.transparent {
+	background-color: rgba(52,58,64,0.7);
+}
+
+.carousel-control-prev:hover {
+	opacity: 0.2;
+	background-color: black;
+}
+
+.carousel-control-next:hover {
+	opacity: 0.2;
+	background-color: black;
+}
+
+.carousel {
+	width: 100%;
+	max-width: 900px;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
