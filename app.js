@@ -12,7 +12,7 @@ var port = 5001
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"))
 // Modules
-app.use(express.static(__dirname + "/../node_modules"))
+app.use(express.static(__dirname + "/node_modules"))
 // Public files (images/css/js/etc)
 app.use(express.static(__dirname + "/public"))
 
